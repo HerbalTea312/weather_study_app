@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.direction_row {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.direction_column {
+    flex-direction: column;
+}
+
+.bg_table {
+    background-color: #d9d9d9;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.space_between {
+    justify-content: space-between;
+}
