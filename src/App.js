@@ -8,43 +8,43 @@ const data =
   [{
     "id": "1",
     "date": "2023-11-13",
-    "icon": "Snow.svg",
+    "icon": "Cloud",
     "temperature": "+1"
   },
   {
     "id": "2",
     "date": "2023-11-14",
-    "icon": "Snow.svg",
+    "icon": "Snow",
     "temperature": "0"
   },
   {
     "id": "3",
     "date": "2023-11-15",
-    "icon": "Snow.svg",
+    "icon": "Snow",
     "temperature": "0"
   },
   {
     "id": "4",
     "date": "2023-11-16",
-    "icon": "Snow.svg",
+    "icon": "Sun",
     "temperature": "+1"
   },
   {
     "id": "5",
     "date": "2023-11-17",
-    "icon": "Snow.svg",
+    "icon": "Snow",
     "temperature": "-1"
   },
   {
     "id": "6",
     "date": "2023-11-18",
-    "icon": "Snow.svg",
+    "icon": "Rain",
     "temperature": "-2"
   },
   {
     "id": "7",
     "date": "2023-11-19",
-    "icon": "Snow.svg",
+    "icon": "Thunder",
     "temperature": "-2"
   }]
 
@@ -120,7 +120,7 @@ function App() {
       <City />
       <ThreeRowTable data={data} />
       <OneRowTable data={wind} title = 'Ветер'/>
-      <OneRowTable data={water} title = 'Влажность'/>   
+      <OneRowTable data={water} title = 'Влажность'/> 
     </div>
   );
 }

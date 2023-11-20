@@ -1,4 +1,5 @@
 import React from 'react';
+import WeatherSVG from './UI/Icons/WeatherSVG';
 import '../styles/App.css'
 
 function getWeekDay(date) {
@@ -15,7 +16,7 @@ const ThreeItemsRow = function (props) {
         <div className='flex direction_column'>
             <p>{getWeekDay(date)}</p>
             <p>{props.post.date}</p>
-            <img src={"../../public/icons/".concat(props.post.icon)} alt={props.post.icon}></img>
+            <WeatherSVG value={props.post.icon} />
             <p>{props.post.temperature}</p>
         </div>
     );
