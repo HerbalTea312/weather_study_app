@@ -7,13 +7,15 @@ function getWeekDay(date) {
     return days[date.getDay()];
 }
 
+
 const WeatherItem = function (props) {
-let date = new Date(props.post.date);
+
+    let date = new Date(props.post.date);
     return (
         <div className='flex direction_column'>
             <p>{getWeekDay(date)}</p>
             <p>{props.post.date}</p>
-            <img src="" alt={props.post.icon}></img>
+            <img src={"../../public/icons/".concat(props.post.icon)} alt={props.post.icon}></img>
             <p>{props.post.temperature}</p>
         </div>
     );

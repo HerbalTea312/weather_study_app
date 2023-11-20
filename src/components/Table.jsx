@@ -8,43 +8,43 @@ const Table = function () {
         {
             "id":"1",
             "date": "2023-11-13",
-            "icon": "Snowy",
+            "icon": "Snow.svg",
             "temperature": "+1"
         },
         {
             "id":"2",
             "date": "2023-11-14",
-            "icon": "Snowy",
+            "icon": "Snow.svg",
             "temperature": "0"
         },
         {
             "id":"3",
             "date": "2023-11-15",
-            "icon": "Snowy",
+            "icon": "Snow.svg",
             "temperature": "0"
         },
         {
             "id":"4",
             "date": "2023-11-16",
-            "icon": "Snowy",
+            "icon": "Snow.svg",
             "temperature": "+1"
         },
         {
             "id":"5",
             "date": "2023-11-17",
-            "icon": "Snowy",
+            "icon": "Snow.svg",
             "temperature": "-1"
         },
         {
             "id":"6",
             "date": "2023-11-18",
-            "icon": "Snowy",
+            "icon": "Snow.svg",
             "temperature": "-2"
         },
         {
             "id":"7",
             "date": "2023-11-19",
-            "icon": "Snowy",
+            "icon": "Snow.svg",
             "temperature": "-2"
         }
     ])
