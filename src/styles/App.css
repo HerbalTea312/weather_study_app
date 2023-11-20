@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family:'Montserrat Alternates black';
+}
+
 .flex {
     display: flex;
 }
@@ -28,3 +32,8 @@
 .space_between {
     justify-content: space-between;
 }
+
+@font-face {
+    font-family: "Montserrat Alternates black";
+    src: url("../../public/MontserratAlternates-Black.ttf");
+  }
