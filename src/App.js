@@ -1,35 +1,126 @@
-import Table from './components/Table';
-// import City from './components/City';
-import ModalWindow from './components/UI/ModalWindow/ModalWindow.jsx';
-import ChangeButton from './components/UI/ChangeButton/ChangeButton';
-import Input from './components/UI/Input/Input';
+import OneRowTable from './components/OneRowTable';
+import City from './components/City';
+import React from 'react';
 import './styles/App.css'
-import { useState } from 'react';
+import ThreeRowTable from './components/ThreeRowTable';
+
+const data =
+  [{
+    "id": "1",
+    "date": "2023-11-13",
+    "icon": "Snow.svg",
+    "temperature": "+1"
+  },
+  {
+    "id": "2",
+    "date": "2023-11-14",
+    "icon": "Snow.svg",
+    "temperature": "0"
+  },
+  {
+    "id": "3",
+    "date": "2023-11-15",
+    "icon": "Snow.svg",
+    "temperature": "0"
+  },
+  {
+    "id": "4",
+    "date": "2023-11-16",
+    "icon": "Snow.svg",
+    "temperature": "+1"
+  },
+  {
+    "id": "5",
+    "date": "2023-11-17",
+    "icon": "Snow.svg",
+    "temperature": "-1"
+  },
+  {
+    "id": "6",
+    "date": "2023-11-18",
+    "icon": "Snow.svg",
+    "temperature": "-2"
+  },
+  {
+    "id": "7",
+    "date": "2023-11-19",
+    "icon": "Snow.svg",
+    "temperature": "-2"
+  }]
+
+const wind = [
+  {
+    "value": "1",
+    "date": "2023-11-13"
+  },
+  {
+    "value": "2",
+    "date": "2023-11-14"
+  },
+  {
+    "value": "3",
+    "date": "2023-11-15"
+  },
+  {
+    "value": "4",
+    "date": "2023-11-16"
+  },
+  {
+    "value": "5",
+    "date": "2023-11-17"
+  },
+  {
+    "value": "6",
+    "date": "2023-11-18"
+  },
+  {
+    "value": "7",
+    "date": "2023-11-19"
+  }
+]
+
+const water = [
+  {
+    "value": "1",
+    "date": "2023-11-13"
+  },
+  {
+    "value": "2",
+    "date": "2023-11-14"
+  },
+  {
+    "value": "3",
+    "date": "2023-11-15"
+  },
+  {
+    "value": "4",
+    "date": "2023-11-16"
+  },
+  {
+    "value": "5",
+    "date": "2023-11-17"
+  },
+  {
+    "value": "6",
+    "date": "2023-11-18"
+  },
+  {
+    "value": "7",
+    "date": "2023-11-19"
+  }
+]
 
 function App() {
-
-  const [modal, setModal] = useState(false);
-  const [post, setPost] = useState({ title: '', body: '' });
 
   return (
     <div className="App">
       <header>
         <h1>SIMPLE WEATHER</h1>
       </header>
-      <div className='flex space_between'>
-        <p>Ульяновск</p>
-        <ChangeButton onClick={() => setModal(true)}>
-          Изменить город
-        </ChangeButton>
-      </div>
-      <ModalWindow visible={modal} setVisible={setModal}>
-        <form>
-          <Input onChange={e => setPost({ ...post, title: e.target.value })}
-            type="text"
-            placeholder="Название поста" />
-        </form>
-      </ModalWindow>
-      <Table />
+      <City />
+      <ThreeRowTable data={data} />
+      <OneRowTable data={wind} title = 'Ветер'/>
+      <OneRowTable data={water} title = 'Влажность'/>   
     </div>
   );
 }

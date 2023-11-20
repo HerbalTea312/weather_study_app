@@ -8,7 +8,7 @@ function getWeekDay(date) {
 }
 
 
-const WeatherItem = function (props) {
+const ThreeItemsRow = function (props) {
 
     let date = new Date(props.post.date);
     return (
@@ -21,4 +21,4 @@ const WeatherItem = function (props) {
     );
 }
 
-export default WeatherItem;
+export default ThreeItemsRow;
