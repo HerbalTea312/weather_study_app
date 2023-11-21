@@ -10,8 +10,8 @@ const Day = function (props) {
                 <button>Подробнее</button>
             </div>
             <div>
-                <Item details={props.day.day} />
-                <Item details={props.day.night} />
+                <Item details={props.day.day} time='День' />
+                <Item details={props.day.night} time='Ночь'/>
             </div>
         </div>
     );
