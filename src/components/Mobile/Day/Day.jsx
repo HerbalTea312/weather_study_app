@@ -2,18 +2,18 @@ import React from 'react';
 import Item from '../Item/Item';
 import classes from './Day.module.css';
 
-const Day = function () {
+const Day = function (props) {
     return (
-        <div className={classes.dayMobile}>
-        <div className='flex direction_row space_between'>
-          <p>Понедельник, 13 ноября</p>
-          <button>Подробнее</button>
-        </div>
         <div>
-          <Item />
-          <Item />
+            <div className={classes.dayMobile}>
+                <p>Понедельник, {props.day.date}</p>
+                <button>Подробнее</button>
+            </div>
+            <div>
+                <Item details={props.day.day} />
+                <Item details={props.day.night} />
+            </div>
         </div>
-      </div>
     );
 }
 
