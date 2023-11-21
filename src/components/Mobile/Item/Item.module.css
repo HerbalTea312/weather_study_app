@@ -1,0 +1,6 @@
+.mobileItem {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: #d9d9d9;
+}

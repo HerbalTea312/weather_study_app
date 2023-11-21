@@ -1,8 +1,9 @@
-import OneRowTable from './components/OneRowTable'
+// import OneRowTable from './components/OneRowTable'
+// import ThreeRowTable from './components/ThreeRowTable';
+import Item from './components/Mobile/Item/Item';
 import City from './components/City';
 import React from 'react';
 import './styles/App.css'
-import ThreeRowTable from './components/ThreeRowTable';
 
 const data =
   [{
@@ -116,12 +117,31 @@ function App() {
     <div className="App">
       <header>
         <h1>SIMPLE WEATHER</h1>
+        <hr style={{ margin: '15px 0' }} />
       </header>
       <City />
+      <hr style={{ margin: '15px 0' }} />
+
+      {/* 
+      // Для десктопа
       <ThreeRowTable data={data} />
-      <OneRowTable data={wind} title = 'Ветер'/>
-      <OneRowTable data={water} title = 'Влажность'/> 
-    </div>
+      <OneRowTable data={wind} title='Ветер' />
+      <OneRowTable data={water} title='Влажность' /> */}
+
+      <div>
+        <h3>Неделя</h3>
+        <div>
+          <div className='flex direction_row space_between'>
+            <p>Понедельник, 13 ноября</p>
+            <button>Подробнее</button>
+          </div>
+          <div>
+            <Item />
+            <Item />
+          </div>
+        </div>
+      </div>
+    </div >
   );
 }
 
