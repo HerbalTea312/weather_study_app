@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ChangeButton.module.css';
+import classes from './StyledButton.module.css';
 
 const ChangeButton = ({children, ...props}) => {
     return (

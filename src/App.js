@@ -11,7 +11,7 @@ function App() {
         <h1>SIMPLE WEATHER</h1>
         <hr style={{ margin: '10px 0' }} />
       </header>
-      <City />
+      <City cityName='Ульяновск'/>
       <hr style={{ margin: '10px 0' }} />
       {/* <ThreeRowTable data={data} />
       <OneRowTable data={wind} title='Ветер, м/с' />
@@ -27,7 +27,7 @@ export default App;
 const dataMobile =
   [{
     "id": "1",
-    "date": "2023-07-13",
+    "date": "2023-11-13",
     "day": {
       "icon": "Cloud",
       "temperature": "+1",

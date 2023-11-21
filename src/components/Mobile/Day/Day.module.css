@@ -1,12 +1,16 @@
 .dayMobile {
     display: flex;
     justify-content: space-between;
-    margin: 15px 0;
+    margin: 5px 0;
     flex-direction: row;
 }
 
-.weekDay {
+.weekDayText {
     font-family:'Montserrat Alternates Medium';
+}
+
+.dayBorder {
+    margin: 15px 0 5px 0;
 }
 
 @font-face {

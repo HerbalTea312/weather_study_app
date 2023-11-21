@@ -2,14 +2,14 @@ import React from 'react';
 import WeatherSVG from '../../UI/Icons/WeatherSVG';
 import classes from './Item.module.css';
 
-const Item = function (props) {
+const Item = function ({details, time, ...props}) {
     return (
-        <div className={classes.mobileItem} >
-            <p>{props.time}</p>
-            <WeatherSVG value={props.details.icon} />
-            <p>{props.details.temperature}</p>
-            <p>{props.details.wet}</p>
-            <p>{props.details.wind}</p>
+        <div className={classes.mobileItem}>
+            <p>{time}</p>
+            <WeatherSVG value={details.icon} />
+            <p>{details.temperature}</p>
+            <p>{details.wet}</p>
+            <p>{details.wind}</p>
         </div>
     );
 }
