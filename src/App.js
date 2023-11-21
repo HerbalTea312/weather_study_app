@@ -1,4 +1,4 @@
-import OneRowTable from './components/OneRowTable';
+import OneRowTable from './components/OneRowTable'
 import City from './components/City';
 import React from 'react';
 import './styles/App.css'

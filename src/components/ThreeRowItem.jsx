@@ -8,16 +8,22 @@ function getWeekDay(date) {
     return days[date.getDay()];
 }
 
+function isNotNull(value) {
+    if (value) return (value)
+}
 
 const ThreeRowItem = function (props) {
-
-    let date = new Date(props.post.date);
+    console.log(props);
+    let weekDay = new Date(props.post.date);
     return (
         <div className='flex direction_column'>
-            <p>{getWeekDay(date)}</p>
-            <p>{props.post.date}</p>
-            <WeatherSVG value={props.post.icon} />
-            <p>{props.post.temperature}</p>
+
+            {/* Придумать, как показывать дату ИЛИ время
+            И можно будет использовать один компонент на все списки */}
+            
+            <p>{getWeekDay(weekDay)}</p>
+            <WeatherSVG value={isNotNull(props.post.icon)} />
+            <p>{isNotNull(props.post.temperature)}</p>
         </div>
     );
 }
