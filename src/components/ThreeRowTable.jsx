@@ -1,5 +1,5 @@
 import React from 'react';
-import ThreeItemsRow from './ThreeItemsRow';
+import ThreeRowItem from './ThreeRowItem';
 import '../styles/App.css'
 
 const Table = function (props) {
@@ -8,7 +8,7 @@ const Table = function (props) {
             <h2>Неделя</h2>
             <div className="flex direction_row bg_table">
                 {props.data.map(day =>
-                    <ThreeItemsRow post = {day} key={day.date}/>
+                    <ThreeRowItem post = {day} key={day.date}/>
                 )}
             </div>
         </div>

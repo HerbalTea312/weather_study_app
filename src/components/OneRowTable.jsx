@@ -1,5 +1,5 @@
 import React from 'react';
-import OneItemRow from './OneItemRow';
+import OneRowItem from './OneRowItem';
 import '../styles/App.css'
 
 const OneRowTable = function (props) {
@@ -8,7 +8,7 @@ const OneRowTable = function (props) {
             <h3>{props.title}</h3>
             <div className="flex direction_row bg_table">
                 {props.data.map(day =>
-                    <OneItemRow day={day} key={day.date} />
+                    <OneRowItem day={day} key={day.date} />
                 )}
             </div>
         </div>

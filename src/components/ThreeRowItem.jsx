@@ -9,7 +9,7 @@ function getWeekDay(date) {
 }
 
 
-const ThreeItemsRow = function (props) {
+const ThreeRowItem = function (props) {
 
     let date = new Date(props.post.date);
     return (
@@ -22,4 +22,4 @@ const ThreeItemsRow = function (props) {
     );
 }
 
-export default ThreeItemsRow;
+export default ThreeRowItem;

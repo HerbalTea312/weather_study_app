@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/App.css'
 
-const OneItemRow = function (props) {
+const OneRowItem = function (props) {
     return (
         <div className='flex direction_column'>
             <p>{props.day.value}</p>
@@ -9,4 +9,4 @@ const OneItemRow = function (props) {
     );
 }
 
-export default OneItemRow;
+export default OneRowItem;
