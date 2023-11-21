@@ -1,11 +1,12 @@
-// import Day from '../Day/Day';
+import Item from '../Item/Item';
 import React from 'react';
-// import classes from './Week.module.css';
 
-const Details = function (props) {
+const Details = function ({details}) {
     return (
         <div>
-            
+            {details.times.map(time =>
+                <Item details={time} time={time.time} key={time.time}/>
+            )}
         </div>
     );
 }

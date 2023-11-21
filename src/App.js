@@ -1,5 +1,6 @@
 import Week from './components/Mobile/Week/Week';
 import City from './components/City';
+import Details from './components/Mobile/DayDetails/Details';
 import React from 'react';
 import './styles/App.css'
 
@@ -11,18 +12,58 @@ function App() {
         <h1>SIMPLE WEATHER</h1>
         <hr style={{ margin: '10px 0' }} />
       </header>
-      <City cityName='Ульяновск'/>
+      <City cityName='Ульяновск' />
       <hr style={{ margin: '10px 0' }} />
       {/* <ThreeRowTable data={data} />
       <OneRowTable data={wind} title='Ветер, м/с' />
       <OneRowTable data={wet} title='Влажность, %' />
       <OneRowTable data={presure} title='Давление, мм рт ст' /> */}
-      <Week data={dataMobile} />
+      {/* <Week data={dataMobile}/> */}
+      <Details details={detailsMobile} />
     </div >
   );
 }
 
 export default App;
+
+const detailsMobile =
+{
+  "id": "1",
+  "date": "2023-11-13",
+  "times": [
+    {
+      "time": "morning",
+      "icon": "Cloud",
+      "temperature": "+1",
+      "wind": "0-1 ЮЗ",
+      "presure": "744",
+      "wet": "70 %"
+    },
+    {
+      "time": "day",
+      "icon": "Snow",
+      "temperature": "+1",
+      "wind": "0-1 ЮЗ",
+      "presure": "744",
+      "wet": "70 %"
+    },
+    {
+      "time": "evening",
+      "icon": "Snow",
+      "temperature": "+1",
+      "wind": "0-1 ЮЗ",
+      "presure": "744",
+      "wet": "70 %"
+    },
+    {
+      "time": "night",
+      "icon": "Snow",
+      "temperature": "+1",
+      "wind": "0-1 ЮЗ",
+      "presure": "744",
+      "wet": "70 %"
+    }]
+}
 
 const dataMobile =
   [{

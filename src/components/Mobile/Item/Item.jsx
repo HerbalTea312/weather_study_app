@@ -2,7 +2,8 @@ import React from 'react';
 import WeatherSVG from '../../UI/Icons/WeatherSVG';
 import classes from './Item.module.css';
 
-const Item = function ({details, time, ...props}) {
+const Item = function ({details, time}) {
+    console.log(details)
     return (
         <div className={classes.mobileItem}>
             <p>{time}</p>
