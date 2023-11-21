@@ -1,6 +1,7 @@
 // import OneRowTable from './components/OneRowTable'
 // import ThreeRowTable from './components/ThreeRowTable';
-import Item from './components/Mobile/Item/Item';
+// import Item from './components/Mobile/Item/Item';
+import Day from './components/Mobile/Day/Day';
 import City from './components/City';
 import React from 'react';
 import './styles/App.css'
@@ -130,16 +131,13 @@ function App() {
 
       <div>
         <h3>Неделя</h3>
-        <div>
-          <div className='flex direction_row space_between'>
-            <p>Понедельник, 13 ноября</p>
-            <button>Подробнее</button>
-          </div>
-          <div>
-            <Item />
-            <Item />
-          </div>
-        </div>
+        <Day/>
+        <Day/>
+        <Day/>
+        <Day/>
+        <Day/>
+        <Day/>
+        <Day/>
       </div>
     </div >
   );
