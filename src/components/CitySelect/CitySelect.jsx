@@ -7,7 +7,7 @@ const CitySelect = (props) => {
     
     const handleCityChange = (event) => {
         setSelectedCity(event.target.value);
-        props.onCitySelect(event.target.value); // вызов функции обратного вызова
+        props.onCitySelect(event.target.value); 
     };
     
     return (

@@ -5,10 +5,10 @@ import './styles/App.css'
 
 function onCitySelect(selectedCity) {
   console.log(selectedCity)
+  localStorage.setItem("city", selectedCity);
 }
 
 function App() {
-
   return (
     <div className='App'>
       <header>
