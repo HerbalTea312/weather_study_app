@@ -13,7 +13,7 @@ function getMonthName(date) {
     return months[date.getMonth()];
 }
 
-const Day = function ({day, ...props}) {
+const Day = function ({day}) {
     let date = new Date(day.date);
     return (
         <div className={classes.dayBorder}>
