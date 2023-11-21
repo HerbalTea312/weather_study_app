@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-h1 {
-    font-family:'Montserrat Alternates black';
+p {
+    font-family:'Montserrat Alternates';
 }
 
 .flex {
@@ -34,6 +34,6 @@ h1 {
 }
 
 @font-face {
-    font-family: "Montserrat Alternates black";
-    src: url("../../public/MontserratAlternates-Black.ttf");
+    font-family: "Montserrat Alternates";
+    src: url("../../public/MontserratAlternates-Light.ttf");
   }
