@@ -1,5 +1,3 @@
-// import OneRowTable from './components/OneRowTable'
-// import ThreeRowTable from './components/ThreeRowTable';
 import Week from './components/Mobile/Week/Week';
 import City from './components/City';
 import React from 'react';
@@ -11,10 +9,10 @@ function App() {
     <div className="App">
       <header>
         <h1>SIMPLE WEATHER</h1>
-        <hr style={{ margin: '15px 0' }} />
+        <hr style={{ margin: '10px 0' }} />
       </header>
       <City />
-      <hr style={{ margin: '15px 0' }} />
+      <hr style={{ margin: '10px 0' }} />
       {/* <ThreeRowTable data={data} />
       <OneRowTable data={wind} title='Ветер, м/с' />
       <OneRowTable data={wet} title='Влажность, %' />
@@ -38,7 +36,7 @@ const dataMobile =
       "wet": "70 %"
     },
     "night": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",
@@ -56,7 +54,7 @@ const dataMobile =
       "wet": "70 %"
     },
     "night": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",
@@ -67,14 +65,14 @@ const dataMobile =
     "id": "3",
     "date": "2023-11-15",
     "day": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",
       "wet": "70 %"
     },
     "night": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",
@@ -85,7 +83,7 @@ const dataMobile =
     "id": "4",
     "date": "2023-11-16",
     "day": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",
@@ -103,14 +101,14 @@ const dataMobile =
     "id": "5",
     "date": "2023-11-17",
     "day": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",
       "wet": "70 %"
     },
     "night": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",
@@ -121,7 +119,7 @@ const dataMobile =
     "id": "6",
     "date": "2023-11-18",
     "day": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",
@@ -139,14 +137,14 @@ const dataMobile =
     "id": "7",
     "date": "2023-11-19",
     "day": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",
       "wet": "70 %"
     },
     "night": {
-      "icon": "Cloud",
+      "icon": "Snow",
       "temperature": "+1",
       "wind": "0-1 ЮЗ",
       "presure": "744",

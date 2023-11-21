@@ -11,7 +11,7 @@ const City = function () {
 
     return (
         <div className='flex space_between'>
-            <h2>Ульяновск</h2>
+            <h3>Ульяновск</h3>
             <ChangeButton onClick={() => setModal(true)}>
                 Изменить город
             </ChangeButton>
