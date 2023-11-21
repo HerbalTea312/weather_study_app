@@ -29,7 +29,7 @@ export default App;
 const dataMobile =
   [{
     "id": "1",
-    "date": "2023-11-13",
+    "date": "2023-07-13",
     "day": {
       "icon": "Cloud",
       "temperature": "+1",

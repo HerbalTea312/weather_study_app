@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 15px;
+}
+
 p {
     font-family:'Montserrat Alternates';
 }
@@ -35,5 +39,5 @@ p {
 
 @font-face {
     font-family: "Montserrat Alternates";
-    src: url("../../public/MontserratAlternates-Light.ttf");
+    src: url("../../public/fonts/MontserratAlternates-Regular.ttf");
   }

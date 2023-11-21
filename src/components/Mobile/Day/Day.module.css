@@ -3,3 +3,12 @@
     justify-content: space-between;
     flex-direction: row;
 }
+
+.weekDay {
+    font-family:'Montserrat Alternates Medium';
+}
+
+@font-face {
+    font-family: "Montserrat Alternates Medium";
+    src: url("../../../../public/fonts/MontserratAlternates-Medium.ttf");
+  }
