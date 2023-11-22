@@ -1,6 +1,7 @@
 import CitySelect from './components/CitySelect/CitySelect';
 import Details from './components/DayDetails/Details';
-import Week from './components/Week/Week';
+// import Week from './components/Week/Week';
+import WeatherService from './components/API/WeatherServiceAPI';
 import React from 'react';
 import './styles/App.css'
 
