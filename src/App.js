@@ -1,5 +1,5 @@
 import CitySelect from './components/CitySelect/CitySelect';
-import Details from './components/Mobile/DayDetails/Details';
+import Details from './components/DayDetails/Details';
 import React from 'react';
 import './styles/App.css'
 
@@ -18,6 +18,7 @@ function App() {
       <CitySelect onCitySelect={onCitySelect} />
       <hr style={{ margin: '10px 0' }} />
       <Details details={detailsMobile} />
+      
     </div >
   );
 }

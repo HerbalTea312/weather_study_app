@@ -1,5 +1,5 @@
 import React from 'react';
-import WeatherSVG from '../../UI/Icons/WeatherSVG';
+import WeatherSVG from '../UI/Icons/WeatherSVG';
 import classes from './Item.module.css';
 
 const Item = function ({details, time}) {

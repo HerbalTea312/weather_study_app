@@ -1,7 +1,7 @@
 import React from 'react';
 import Item from '../Item/Item';
 import classes from './Day.module.css';
-import StyledButton from '../../UI/StyledButton/StyledButton'
+import StyledButton from '../UI/StyledButton/StyledButton'
 
 function getWeekDay(date) {
     let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
