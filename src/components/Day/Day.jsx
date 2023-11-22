@@ -13,13 +13,17 @@ function getMonthName(date) {
     return months[date.getMonth()];
 }
 
-const Day = function ({day}) {
+function saveDate(date) {
+    localStorage.setItem("dayDate", date);
+}
+
+const Day = function ({ day }) {
     let date = new Date(day.date);
     return (
         <div className={classes.dayBorder}>
             <div className={classes.dayMobile}>
                 <p><span className={classes.weekDayText}>{getWeekDay(date)}</span>, {date.getDate()}  {getMonthName(date)}</p>
-                <StyledButton>Подробнее</StyledButton>
+                <StyledButton onClick={() => saveDate(day.date)}>Подробнее</StyledButton>
             </div>
             <div>
                 <Item details={day.day} time='День' />
