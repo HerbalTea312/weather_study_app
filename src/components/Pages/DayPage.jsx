@@ -12,16 +12,13 @@ function DayPage() {
 
     async function fetchHandler() {
         const response = await WeatherService.getDayDetails();
-        console.log(response)
         setDayWeather(response)
     }
 
     function onCitySelect(selectedCity) {
-        console.log(selectedCity);
         localStorage.setItem("city", selectedCity);
-
     }
-    console.log(localStorage.getItem("city"));
+
     return (
         <div className='App'>
             <header>

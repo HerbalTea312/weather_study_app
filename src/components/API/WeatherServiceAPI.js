@@ -1,9 +1,13 @@
 import axios from 'axios';
 
+// date - текущая дата. Не реализовано, т. к. используется тестовый сервер с определенным набором данных
+
 export default class WeatherService {
-    static async getWeekData() {
+
+    static async getWeekData(date = "weekWeather") {
         try {
-            const response = await axios.get("https://my-json-server.typicode.com/HerbalTea312/weather/db/data/weekWeather");
+            const url = "https://my-json-server.typicode.com/HerbalTea312/weather/db/data/" + date
+            const response = await axios.get(url);
             return ([...response.data]);
         } catch (error) {
             console.log(error);
@@ -11,9 +15,10 @@ export default class WeatherService {
 
     }
 
-    static async getDayDetails() {
+    static async getDayDetails(date = "dayWeather") {
         try {
-            const response = await axios.get("https://my-json-server.typicode.com/HerbalTea312/weather/db/data/dayWeather");
+            const url = "https://my-json-server.typicode.com/HerbalTea312/weather/db/data/" + date
+            const response = await axios.get(url);
             return (response.data);
         } catch (error) {
             console.log(error);

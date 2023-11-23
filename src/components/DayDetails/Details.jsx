@@ -23,11 +23,13 @@ function getMonthName(date) {
 
 const Details = function (props) {
     let date = new Date(props.details.date);
+    const times = Array.isArray(props.details.times) ? Object.values(props.details.times) : props.details.times
+    console.log(times)
     return (
         <div>
             <h3>{getWeekDay(date)}</h3>
             <p>{date.getDate()} {getMonthName(date)}</p>
-            {Object.values(props.details.times).map(time =>
+            {times.map(time =>
                 <Item details={time} time={getDayPart(time.time)} key={time.time} />
             )}
         </div>

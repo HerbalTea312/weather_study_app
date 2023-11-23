@@ -3,6 +3,8 @@ import Item from '../Item/Item';
 import classes from './Day.module.css';
 import StyledButton from '../UI/StyledButton/StyledButton'
 
+
+
 function getWeekDay(date) {
     let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
     return days[date.getDay()];
@@ -13,11 +15,11 @@ function getMonthName(date) {
     return months[date.getMonth()];
 }
 
-function saveDate(date) {
-    localStorage.setItem("dayDate", date);
-}
-
 const Day = function ({ day }) {
+    function saveDate(date) {
+        localStorage.setItem("dayDate", date);
+    }
+
     let date = new Date(day.date);
     return (
         <div className={classes.dayBorder}>
