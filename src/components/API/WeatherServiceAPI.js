@@ -19,4 +19,13 @@ export default class WeatherService {
             console.log(error);
         }
     }
+
+    static async getCityItems() {
+        try {
+            const response = await axios.get("https://my-json-server.typicode.com/HerbalTea312/weather/db/data/cities");
+            return (response.data);
+        } catch (error) {
+            console.log(error);
+        }
+    }
 }
