@@ -1,4 +1,5 @@
 import Item from '../Item/Item';
+import Image from '../UI/Image/Image';
 import React from 'react';
 
 function getDayPart(word) {
@@ -24,9 +25,9 @@ function getMonthName(date) {
 const Details = function (props) {
     let date = new Date(props.details.date);
     const times = Array.isArray(props.details.times) ? Object.values(props.details.times) : props.details.times
-    console.log(times)
     return (
         <div>
+            <Image weather={props.details.weatherImage}/>
             <h3>{getWeekDay(date)}</h3>
             <p>{date.getDate()} {getMonthName(date)}</p>
             {times.map(time =>
