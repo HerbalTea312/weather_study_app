@@ -1,12 +1,12 @@
 import Day from '../Day/Day';
 import React from 'react';
 
-const Week = function ({data}) {
+const Week = function (props) {
     return (
         <div>
             <h2>Неделя</h2>
-            {data.map(day =>
-               <Day day={day} key={day.id}/> )}
+            {Object.values(props.data).map(day =>
+                <Day day={day} key={day.id} />)}
         </div>
     );
 }

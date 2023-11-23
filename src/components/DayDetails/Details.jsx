@@ -1,5 +1,5 @@
 import Item from '../Item/Item';
-import React, { useState } from 'react';
+import React from 'react';
 
 function getDayPart(word) {
     const dayParts = {
@@ -21,13 +21,13 @@ function getMonthName(date) {
     return months[date.getMonth()];
 }
 
-const Details = function ({ details }) {
-    let date = new Date(details.date);
+const Details = function (props) {
+    let date = new Date(props.details.date);
     return (
         <div>
             <h3>{getWeekDay(date)}</h3>
             <p>{date.getDate()} {getMonthName(date)}</p>
-            {details.times.map(time =>
+            {Object.values(props.details.times).map(time =>
                 <Item details={time} time={getDayPart(time.time)} key={time.time} />
             )}
         </div>
