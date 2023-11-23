@@ -1,22 +1,22 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import classes from './CitySelect.module.css'
 
 const CitySelect = (props) => {
     const [selectedCity, setSelectedCity] = useState('');
     const cities = ['Москва', 'Санкт-Петербург', 'Новосибирск'];
-    
+
     const handleCityChange = (event) => {
         setSelectedCity(event.target.value);
-        props.onCitySelect(event.target.value); 
+        props.onCitySelect(event.target.value);
     };
-    
+
     return (
-        <select className={classes.Select} value={selectedCity} onChange={handleCityChange}>
+        <select className={classes.Select} value={localStorage.getItem("city")?localStorage.getItem("city"):selectedCity} onChange={handleCityChange}>
             {cities.map((city) => (
                 <option key={city} value={city}>{city}</option>
             ))}
         </select>
     );
-    };
-    
-    export default CitySelect;
+};
+
+export default CitySelect;

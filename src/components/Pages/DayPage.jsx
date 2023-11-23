@@ -17,9 +17,11 @@ function DayPage() {
     }
 
     function onCitySelect(selectedCity) {
+        console.log(selectedCity);
         localStorage.setItem("city", selectedCity);
-    }
 
+    }
+    console.log(localStorage.getItem("city"));
     return (
         <div className='App'>
             <header>
